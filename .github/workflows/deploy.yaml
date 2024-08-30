@@ -27,7 +27,10 @@ jobs:
     env:
       NODE_ENV: ci
       PORT: 3000
- 
+      GOOGLE_CLIENT_ID: 70265989829-0t7m7ce5crs6scqd3t0t6g7pv83ncaii.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: 8mkniDQOqacXtlRD3gA4n2az
+      MONGO_URI: mongodb://127.0.0.1:27017/adv-node-db
+      COOKIE_KEY: 123123123
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
